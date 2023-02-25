@@ -20,7 +20,7 @@ RSpec.describe 'When a user visits a vending machine show page', type: :feature 
     snack_3 = Snack.create!(name: "Berries", price: 3)
 
     snack_in_machine_1 = MachineSnack.create!(snack_id: snack_1.id, machine_id: dons.id)
-    snack_in_machine_1 = MachineSnack.create!(snack_id: snack_2.id, machine_id: dons.id)
+    snack_in_machine_2 = MachineSnack.create!(snack_id: snack_2.id, machine_id: dons.id)
     
     visit machine_path(dons.id)
 
