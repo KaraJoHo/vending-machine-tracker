@@ -9,4 +9,6 @@
       <p>Price: <%=snack.price%></p><br>
     </div>
   <% end %>
+
+  <h3>Average Price: $<%= number_with_precision(@machine.average_price_of_snacks.to_f) %>
 </div>
