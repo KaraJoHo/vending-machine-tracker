@@ -10,5 +10,5 @@
     </div>
   <% end %>
 
-  <h3>Average Price: $<%= number_with_precision(@machine.average_price_of_snacks.to_f) %>
+  <h3>Average Price: $<%= number_with_precision(@machine.average_price_of_snacks.to_f, precision: 2) %>
 </div>

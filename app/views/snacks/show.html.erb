@@ -1,0 +1,11 @@
+<h1> <%= @snack.name %> </h1>
+
+<div class = "snack_info">
+  <h3><%=@snack.name%></h3>
+  <p>Price: $<%= number_with_precision(@snack.price.to_f, precision: 2)%>
+  <%@snack.machines.each do |machine| %> 
+    <%=machine.location%>
+    <p><%=machine.location%> Average Price: $<%= number_with_precision(machine.average_price_of_snacks, precision: 2)%></p>
+    <p><%= machine.snack_types%> kinds of snacks in <%=machine.location%></p>
+  <% end %>
+</div>
